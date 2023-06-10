@@ -5,6 +5,7 @@ services:
     image: lfs:latest
     volumes:
       - "./lfs-root:/lfs"
+      - "./scripts:/lfs/scripts"
     # enable the tty to make it not close after docker-compose up
     tty: true
     network_mode: "host"
