@@ -8,6 +8,7 @@ WORKDIR /bin
 
 ENV PATH=/tools/bin:/bin:/usr/bin:/usr/sbin
 
-RUN apt-get update &&apt-get install -y  build-essential bison file gawk wget sudo texinfo bc libssl-dev vim python3 make cmake
+RUN apt-get update &&apt-get install -y  build-essential bison file gawk wget sudo texinfo bc libssl-dev vim python3 make cmake \
+    zsh git
 
 #RUN source ~/.bashrc
